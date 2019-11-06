@@ -1,0 +1,324 @@
+Uri: https://tewkenaire.com/
+File Name: c:\Downloaded Web Sites\tewkenaire.com\index.htm
+Content Type: text/html
+
+Uri: https://tewkenaire.com/css/bootstrap.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\bootstrap.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/font-awesome.min.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/settings.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\settings.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/owl.carousel.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\owl.carousel.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/owl.theme.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\owl.theme.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/magnific-popup.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\magnific-popup.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/select2.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\select2.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/preset.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\preset.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/style.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\style.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/css/responsive.css
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\responsive.css
+Content Type: text/css
+
+Uri: https://tewkenaire.com/images/favicon.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\favicon.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/app.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\app.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/jquery.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\jquery.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/jquery-ui.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\jquery-ui.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/bootstrap.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\bootstrap.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/jquery.themepunch.revolution.min.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\jquery.themepunch.revolution.min.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/jquery.themepunch.tools.min.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\jquery.themepunch.tools.min.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/owl.carousel.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\owl.carousel.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/gmaps.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\gmaps.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/jquery.appear.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\jquery.appear.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/select2.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\select2.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/jquery.magnific-popup.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\jquery.magnific-popup.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/js/theme.js
+File Name: c:\Downloaded Web Sites\tewkenaire.com\js\theme.js
+Content Type: application/javascript
+
+Uri: https://tewkenaire.com/fonts/glyphicons-halflings-regular.eot
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\glyphicons-halflings-regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://tewkenaire.com/fonts/glyphicons-halflings-regular.eot?
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\glyphicons-halflings-regular-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://tewkenaire.com/fonts/glyphicons-halflings-regular.woff2
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\glyphicons-halflings-regular.woff2
+Content Type: font/woff2
+
+Uri: https://tewkenaire.com/fonts/glyphicons-halflings-regular.woff
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\glyphicons-halflings-regular.woff
+Content Type: font/woff
+
+Uri: https://tewkenaire.com/fonts/glyphicons-halflings-regular.ttf
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\glyphicons-halflings-regular.ttf
+Content Type: font/ttf
+
+Uri: https://tewkenaire.com/fonts/glyphicons-halflings-regular.svg
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\glyphicons-halflings-regular.svg
+Content Type: image/svg+xml
+
+Uri: https://tewkenaire.com/fonts/fontawesome-webfont.eot?v=4.7.0
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://tewkenaire.com/fonts/fontawesome-webfont.eot?
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://tewkenaire.com/fonts/fontawesome-webfont.woff2?v=4.7.0
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://tewkenaire.com/fonts/fontawesome-webfont.woff?v=4.7.0
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://tewkenaire.com/fonts/fontawesome-webfont.ttf?v=4.7.0
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\fontawesome-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://tewkenaire.com/fonts/fontawesome-webfont.svg?v=4.7.0
+File Name: c:\Downloaded Web Sites\tewkenaire.com\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://tewkenaire.com/font/revicons.eot?5510888
+File Name: c:\Downloaded Web Sites\tewkenaire.com\font\revicons.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/font/revicons.woff?5510888
+File Name: c:\Downloaded Web Sites\tewkenaire.com\font\revicons-1.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/font/revicons.ttf?5510888
+File Name: c:\Downloaded Web Sites\tewkenaire.com\font\revicons-2.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/font/revicons.svg?5510888
+File Name: c:\Downloaded Web Sites\tewkenaire.com\font\revicons-3.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/gridtile.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\gridtile.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/gridtile_white.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\gridtile_white.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/gridtile_3x3.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\gridtile_3x3.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/gridtile_3x3_white.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\gridtile_3x3_white.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/shadow1.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\shadow1.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/shadow2.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\shadow2.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/shadow3.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\shadow3.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/images/gradient/g30.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\gradient\g30.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/images/gradient/g40.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\gradient\g40.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/boxed_bgtile.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\boxed_bgtile.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/navigdots_bgtile.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\navigdots_bgtile.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/bullets.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\bullets.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/bullets2.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\bullets2.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/bullet_boxed.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\bullet_boxed.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/navigdots.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\navigdots.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/small_left.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\small_left.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/small_right.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\small_right.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/arrow_left.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\arrow_left.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/arrow_right.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\arrow_right.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/small_left_boxed.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\small_left_boxed.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/small_right_boxed.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\small_right_boxed.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/arrowleft.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\arrowleft.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/arrowright.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\arrowright.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/arrow_left2.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\arrow_left2.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/arrow_right2.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\arrow_right2.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/assets/coloredbg.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\assets\coloredbg.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/css/owl.video.play.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\css\owl.video.play.html
+Content Type: text/html
+
+Uri: https://tewkenaire.com/images/bg/1.jpg
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\bg\1.jpg
+Content Type: image/jpeg
+
+Uri: https://tewkenaire.com/images/bg/2.jpg
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\bg\2.jpg
+Content Type: image/jpeg
+
+Uri: https://tewkenaire.com/images/bg/4.jpg
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\bg\4.jpg
+Content Type: image/jpeg
+
+Uri: https://tewkenaire.com/images/bg/5.jpg
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\bg\5.jpg
+Content Type: image/jpeg
+
+Uri: https://tewkenaire.com/images/bg/6.jpg
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\bg\6.jpg
+Content Type: image/jpeg
+
+Uri: https://tewkenaire.com/images/bg/7.jpg
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\bg\7.jpg
+Content Type: image/jpeg
+
+Uri: https://tewkenaire.com/images/pattern/p1.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p1.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/images/pattern/p2.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p2.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/images/pattern/p3.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p3.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/images/pattern/p4.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p4.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/images/pattern/p5.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p5.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/images/pattern/p6.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p6.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/images/pattern/p7.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p7.png
+Content Type: image/png
+
+Uri: https://tewkenaire.com/images/pattern/p8.png
+File Name: c:\Downloaded Web Sites\tewkenaire.com\images\pattern\p8.png
+Content Type: image/png
+
