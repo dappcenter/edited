@@ -1,2 +1,1066 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tronfomo.net</title><!-- Include All CSS--><link rel="stylesheet" type="text/css" <link rel="stylesheet" type="text/css" href="css\bootstrap.css"><link rel="stylesheet" type="text/css" href="css\font-awesome.min.css"><link rel="stylesheet" type="text/css" href="css\settings.css"><link rel="stylesheet" type="text/css" href="css\owl.carousel.css"><link rel="stylesheet" type="text/css" href="css\owl.theme.css"><link rel="stylesheet" type="text/css" href="css\magnific-popup.css"><link rel="stylesheet" type="text/css" href="css\select2.css"><link rel="stylesheet" type="text/css" href="css\preset.css"><link rel="stylesheet" type="text/css" href="css\style.css"><link rel="stylesheet" type="text/css" href="css\responsive.css"><link id="layout" rel="stylesheet" href="/css/lay_colors/wide.css"><link id="lightDark" rel="stylesheet" href="/css/lay_colors/dark.css"><link id="colorChem" rel="stylesheet" href="/css/lay_colors/color1.css"><!-- End Include All CSS--><!-- Favicon Icon--><link rel="icon" type="image/png" href="images\favicon.png"><script type="text/javascript"  charset="UTF-8"></script><script src="app.js" defer=""></script></head><body><div id="app" style="width:100%; height:100%; margin: 0 auto;"></div><a id="backToTop" href="#"><i class="fa fa-angle-up"></i></a><!-- Include All JS--><script type="text/javascript" src="js\jquery.js" defer=""></script><script type="text/javascript" src="js\jquery-ui.js" defer=""></script><script type="text/javascript" src="js\bootstrap.js" defer=""></script><script type="text/javascript" src="js\jquery.themepunch.revolution.min.js" defer=""></script><script type="text/javascript" src="js\jquery.themepunch.tools.min.js" defer=""></script><script type="text/javascript" src="js\owl.carousel.js" defer=""></script><script type="text/javascript" src="js\gmaps.js" defer=""></script><script type="text/javascript" src="js\jquery.appear.js" defer=""></script><script type="text/javascript" src="js\select2.js" defer=""></script><script type="text/javascript" src="js\jquery.magnific-popup.js" defer=""></script><script type="text/javascript" src="js\theme.js" defer=""></script></body></html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102526491-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102526491-3');
+    </script>
+
+    <meta charset="UTF-8"/>
+    <title>Bankroll - Daily</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="/img/logo/Logo-final.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font/iconsmind/style.css?t=1572287774395"/>
+    <link rel="stylesheet" href="font/simple-line-icons/css/simple-line-icons.css?t=1572287774395"/>
+    <link rel="stylesheet" href="css/index.css?t=1572287774395"/>
+    <style>
+        .label-btn {
+            display: inline-block;
+            border: 1px solid #424242;
+            width: 28px;
+            height: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .label-btn:hover {
+            color: #969696;
+        }
+
+        .row-main-form {
+            margin-top: 55px;
+        }
+
+        .form-control[readonly] {
+            border: 1px solid #424242;
+            background: #232223;
+            cursor: not-allowed;
+        }
+
+        .numbers-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .number-wrap {
+            width: 160px;
+            height: 160px;
+            border: 1px solid #424242;
+            border-radius: 0.1rem;
+            margin-left: 5px;
+        }
+
+        .number-wrap:first-child {
+            margin-left: 0;
+        }
+
+        .luck-title {
+            font-family: 'Lobster', cursive;
+            font-size: 8rem !important;
+            color: whitesmoke;
+
+        }
+
+        .jackpot-title {
+            font-family: 'Raleway Dots', cursive;
+            font-size: 4rem !important;
+            line-height: normal;
+            color: white;
+
+        }
+
+        .number-wrap .digit {
+            font-size: 80px;
+            line-height: normal;
+            font-weight: 700;
+        }
+
+        .number-wrap .digit-title {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .noUi-tooltip,
+        .noUi-handle {
+            cursor: pointer;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield; /* Firefox */
+        }
+
+        #rollBtn {
+            font-size: 1.4rem;
+            line-height: 1.0;
+        }
+
+        .rolling-text {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                color: #ffffff;
+            }
+            100% {
+                color: #86367e;
+            }
+        }
+
+        #topStatsContainer i {
+            background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#86367e));
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        #topStatsContainer i.large-icon {
+            font-size: 40px;
+            line-height: 35px;
+        }
+
+        #topStatsContainer .price-top-part > .text-large {
+            font-size: 22px !important;
+        }
+
+        #jackpotContainer .price-top-part > .text-large {
+            font-size: 22px !important;
+        }
+
+        #roundContainer .price-top-part > .text-large {
+            font-size: 22px !important;
+        }
+
+        #current-tickets-wrap {
+            min-width: 114px;
+        }
+
+    </style>
+</head>
+
+<body class="show-spinner">
+<div class="landing-page">
+    <div class="mobile-menu">
+        <a href="/" class="logo-mobile">
+            <span></span>
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <div class="dropdown d-inline-block">
+                    <a class="dropdown-toggle mb-1 notranslate" id="dropdownMenuButtonMob"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyph-icon simple-icon-globe"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonMob">
+                        <a onclick="setLanguageCookie('en');" href="javascript:void(0);"
+                           class="dropdown-item lang-en lang-select notranslate" data-lang="en">English</a>
+                        <a onclick="setLanguageCookie('zh-CN');" href="javascript:void(0);"
+                           class="dropdown-item lang-es lang-select notranslate" data-lang="zh-CN">中文</a>
+                        <a onclick="setLanguageCookie('ja');" href="javascript:void(0);"
+                           class="dropdown-item lang-es lang-select notranslate" data-lang="ja">日本人</a>
+                        <a onclick="setLanguageCookie('ko');" href="javascript:void(0);"
+                           class="dropdown-item lang-es lang-select notranslate" data-lang="ko">한국어</a>
+                        <a onclick="setLanguageCookie('es');" href="javascript:void(0);"
+                           class="dropdown-item lang-es lang-select notranslate" data-lang="es">Español</a>
+                        <a onclick="setLanguageCookie('ru');" href="javascript:void(0);"
+                           class="dropdown-item lang-es lang-select notranslate" data-lang="ru">Русский</a>
+                        <a onclick="setLanguageCookie('fr');" href="javascript:void(0);"
+                           class="dropdown-item lang-es lang-select notranslate" data-lang="fr">Français</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item"><a href="/bnkr.html" class="notranslate">BNKR</a></li><li class="nav-item"><a href="/moon.html" class="notranslate">MOON</a></li><li class="nav-item"><a href="/air.html" class="notranslate">AIR</a></li>
+            <li class="nav-item"><a href="/credits.html" class="notranslate">CREDITS</a></li>
+            <li class="nav-item"><a href="/luck.html" class="notranslate">LUCK</a></li>
+            <li class="nav-item"><a href="/daily.html" class="notranslate">DAILY</a></li>
+            <li class="nav-item"><a href="https://t.me/bankrollnetwork">SOCIAL</a></li>
+            <li class="nav-item"><a href="/resources.html">HELP</a></li>
+            <li class="nav-item"><a href="https://teespring.com/stores/bankroll-network">SHOP</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <nav class="landing-page-nav">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a class="navbar-logo-text pull-left" href="/">
+                    <img alt="footer logo" src="img/logo/LogoWhiteText.png">
+                </a>
+                <ul class="navbar-nav d-none d-lg-flex flex-row">
+                    <li class="nav-item">
+                        <div class="dropdown d-inline-block">
+                            <a class="dropdown-toggle mb-1 notranslate" id="dropdownMenuButton"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyph-icon simple-icon-globe"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a onclick="setLanguageCookie('en');" href="javascript:void(0);"
+                                   class="dropdown-item lang-en lang-select notranslate" data-lang="en">English</a>
+                                <a onclick="setLanguageCookie('zh-CN');" href="javascript:void(0);"
+                                   class="dropdown-item lang-es lang-select notranslate" data-lang="zh-CN">中文</a>
+                                <a onclick="setLanguageCookie('ja');" href="javascript:void(0);"
+                                   class="dropdown-item lang-es lang-select notranslate" data-lang="ja">日本人</a>
+                                <a onclick="setLanguageCookie('ko');" href="javascript:void(0);"
+                                   class="dropdown-item lang-es lang-select notranslate" data-lang="ko">한국어</a>
+                                <a onclick="setLanguageCookie('es');" href="javascript:void(0);"
+                                   class="dropdown-item lang-es lang-select notranslate" data-lang="es">Español</a>
+                                <a onclick="setLanguageCookie('ru');" href="javascript:void(0);"
+                                   class="dropdown-item lang-es lang-select notranslate" data-lang="ru">Русский</a>
+                                <a onclick="setLanguageCookie('fr');" href="javascript:void(0);"
+                                   class="dropdown-item lang-es lang-select notranslate" data-lang="fr">Français</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="/bnkr.html" class="notranslate">BNKR</a></li><li class="nav-item"><a href="/moon.html" class="notranslate">MOON</a></li><li class="nav-item"><a href="/air.html" class="notranslate">AIR</a></li>
+                    <li class="nav-item"><a href="/credits.html" class="notranslate">CREDITS</a></li>
+                    <li class="nav-item"><a href="/luck.html" class="notranslate">LUCK</a></li>
+                    <li class="nav-item"><a href="/daily.html" class="notranslate">DAILY</a></li>
+                    <li class="nav-item"><a href="https://t.me/bankrollnetwork">SOCIAL</a></li>
+                    <li class="nav-item"><a href="/resources.html">HELP</a></li>
+                    <li class="nav-item"><a href="https://teespring.com/stores/bankroll-network">SHOP</a></li>
+                </ul>
+                <a href="#" class="mobile-menu-button">
+                    <i class="simple-icon-menu"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div class="content-container" id="home">
+            <div class="section home">
+                <div class="container">
+                    <div class="row home-row mb-2">
+                        <div class="modal fade" id="tronWebModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">TronWeb Not Detected</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>TronWeb is required for access to Bankroll</h3>
+                                        <p>If you have TronWeb installed make sure you are logged in or have a wallet
+                                            selected</p>
+                                        <p>For desktop we recommend Chrome / TronLink: <a
+                                                href="https://chrome.google.com/webstore/detail/tronlink/ibnejdfjmmkpcnlpebklmnkoeoihofec">Click
+                                            here</a></p>
+                                        <p>For mobile we recommend MathWallet: <a href="https://mathwallet.org/">Click
+                                            here</a></p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="invalidAmountModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Whoops!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Enter Amount in TRX</h3>
+                                        <p>Please enter a valid integer amount, the minimum is 10. Thanks! </p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="autoRollIntModal" tabindex="-1" role="dialog" data-backdrop="static"
+                             aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Auto Buy FTW!!!</h5>
+                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>-->
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- <h3>Select Auto Roll Interval in Seconds</h3> -->
+                                        <h3>How often do you want to buy?</h3>
+                                        <div class="slider mt-5 mb-5" id="dailySlider"></div>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                onclick="updateAutorollInterval();" data-dismiss="modal">SAVE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="invalidAddressModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Whoops!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Enter a valid TRX Address</h3>
+                                        <p>Please check that TRX address again. Thanks! </p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="invalidRefAddressModal" tabindex="-1" role="dialog"
+                             aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Whoops!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Invalid TRX Address Detected in Referral Link</h3>
+                                        <p>Please check that TRX address again. Thanks! </p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="txModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Transaction Complete</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>You can track your transaction below</h3>
+                                        <p>Check on Tronscan: <span class="notranslate" id="txId"></span></p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="autotxModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Auto Buy Complete</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>You can track your transaction below</h3>
+                                        <p>Check on Tronscan: <span class="notranslate" id="autotxId"></span></p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="txModalLuck" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Transaction not found</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>You can track your transaction below</h3>
+                                        <p>Check on Tronscan: <span class="notranslate" id="txIdLuck"></span></p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="txErrorModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Whoops!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>TronLink Reported a Problem</h3>
+                                        <p id="txErrorId"></p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Houston, we have a problem!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Check your gauges</h3>
+                                        <p id="errorId"></p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Hey There!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 id="alertTitle">Check your gauges</h3>
+                                        <p id="alertId"></p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-outline-semi-light default"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mb-4 mt-2">
+                        <div class="container col-12 col-xl-6 col-lg-6 col-md-6 mb-4 pt-4">
+                            <div class="home-text text-center row mb-4 mt-4">
+                                <div class="col-12 text-center">
+                                    <p class="luck-title  pb-4 mb-4 text-center notranslate">Daily</p>
+                                </div>
+                            </div>
+                            <h3 class="text-center text-white-50">&#8776; <span class="notranslate" id="user-estimate"></span>
+                                <small>*</small>
+                            </h3>
+                            <div id="topStatsContainer" class="row">
+
+                                <div class="container col-6 col-xl-3 col-lg-3 col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Coins large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Divs</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate" id="user-vault">0.0 </span>
+                                        </p>
+                                        <p class="text-muted text-small">TRX</p>
+                                    </div>
+                                </div>
+
+                                <div class="container col-6 col-xl-3 col-lg-3 col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Battery-75  large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Div Power</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate" id="user-bonus">0.0</span>
+                                        </p>
+                                        <p class="text-muted text-small">Ownership</p>
+                                    </div>
+                                </div>
+                                <!--<div class="container col-4 col-xl-4 col-lg-4 col-md-4 text-center">-->
+                                <div class="container col-6 col-xl-3 col-lg-3 col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Handshake large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Rewards</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate" id="user-buddy">0.0 </span>
+                                        </p>
+                                        <p class="text-muted text-small">TRX</p>
+                                    </div>
+                                </div>
+                                <div class="container col-6 col-xl-3 col-lg-3 col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Repeat-3 large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Rolls</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate" id="user-rolls">0.0</span>
+                                        </p>
+                                        <p class="text-muted text-small">Count</p>
+                                    </div>
+                                </div>
+                                <div class="container col-6 col-xl-3 col-lg-3 col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Movie-Ticket   large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Tickets</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate user-tickets">0.0</span></p>
+                                        <p class="text-muted text-small">Count</p>
+                                    </div>
+                                </div>
+                                <div class="container col-6 col-xl-3 col-lg-3 col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Next2 large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Rounds</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                                    id="user-rounds">0.0 </span></p>
+                                        <p class="text-muted text-small">Count</p>
+                                    </div>
+                                </div>
+
+                                <div class="container col-6 col-xl-3 col-lg- col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Astronaut large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Claimed</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                                    id="user-claimed">0.0 </span></p>
+                                        <p class="text-muted text-small">TRX</p>
+                                    </div>
+                                </div>
+                                <div class="container col-6 col-xl-3 col-lg-3 col-md-3  text-center">
+                                    <div class="price-top-part">
+                                        <i class="iconsmind-Medal-2 large-icon"></i>
+                                        <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Wins</h5>
+                                        <p class="text-large mb-2 text-white"><span class="notranslate" id="user-wins">0.0</span>
+                                        </p>
+                                        <p class="text-muted text-small">Count</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container col-12 col-xl-6 col-lg-6 col-md-6 mb-4">
+                            <div class="text-right mb-2">
+                                <a target="_blank" href="https://youtu.be/y1bnf7VyEHk" class="mr-4">Tutorial</a>
+
+
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h3>Round <span class="notranslate" id="time-left"></span></h3>
+
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-6 text-left">
+                                                <label for="buyAmount">Buy Tickets</label>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <label class="user-tickets text-white">0.0</label> / <label class="lead-tickets text-white">0.0</label>
+                                                </div>
+                                            </div>
+                                            <input type="number" class="form-control" id="buyAmount"
+                                                   aria-describedby="buyTrxHelp"
+                                                   placeholder="TRX">
+                                            <small class="form-text text-muted">A minimum 10 ticket strip is required. A
+                                                ticket is 1 TRX. Estimates:<br> <span
+                                                        class="notranslate" id="buy-estimate" class="text-white"></span>
+                                            </small>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-8 text-left">
+                                                <a class="btn btn-outline-semi-light default mb-0"
+                                                   id="buyTrx" onclick="buy();">BUY</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <label>
+                                                    <div class="custom-switch custom-switch-primary-inverse">
+                                                        <input class="custom-switch-input" id="autoRollChb"
+                                                               type="checkbox"/>
+                                                        <label class="custom-switch-btn align-middle mt-0"
+                                                               for="autoRollChb"></label>
+                                                        <small class="form-text d-inline-block align-middle text-muted p-0 m-0 ml-2">
+                                                            Auto
+                                                        </small>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <p class="col-12 white mb-3">
+                                <a class="btn btn-outline-semi-light btn-block default mb-0 mr-4"
+                                   onclick="reinvest();">ROLL</a>
+                                <a class="btn btn-outline-semi-light btn-block default mb-0 mr-4"
+                                   onclick="claim();">CLAIM</a>
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row mb-4 mt-4">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6 text-left">
+                            <p class="white">Network: <span class="notranslate" id="network">Detecting...</span>
+                                &nbsp;&nbsp;&nbsp;Bandwidth: <span class="notranslate" id="getBandwidth">0</span> &nbsp;&nbsp;
+                                Energy: <span
+                                        id="getEnergy">0</span>
+                            </p>
+                        </div>
+                        <div class="col-12 col-xl-6 col-lg-6 text-xl-right text-lg-right text-md-right">
+                            <p class="white">Wallet: <span class="notranslate" id="walletAddress">Loading...</span>&nbsp;&nbsp;&nbsp;
+                                Balance: <span class="notranslate" id="walletBalanceValue">0.0</span> TRX
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-4 mt-2">
+                        <div class="container col-12 col-xl-6 col-lg-6 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="text-center col-12">
+                                            <h3>Round Stats</h3>
+                                        </div>
+                                        <!-- <div class="text-center col-12">
+                                            <h4 class="text-white">Your Tickets - <span class="user-tickets">0.0</span></h4>
+                                        </div> -->
+                                    </div>
+
+                                    <div id="roundContainer" class="row">
+
+                                        <div class="container col-6 col-xl-4 col-lg-4 col-md-4  text-center">
+                                            <div class="price-top-part">
+                                                <i class="iconsmind-Next2 large-icon"></i>
+                                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Round</h5>
+                                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                                            id="round">0.0 </span></p>
+                                                <p class="text-muted text-small">Count</p>
+                                            </div>
+                                        </div>
+                                        <div class="container col-6 col-xl-4 col-lg-4 col-md-4  text-center">
+                                            <div class="price-top-part">
+                                                <i class="iconsmind-Male large-icon"></i>
+                                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Leader</h5>
+                                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                                            id="lead-player"></span>
+                                                </p>
+                                                <p class="text-muted text-small">Address</p>
+                                            </div>
+                                        </div>
+                                        <div class="container col-6 col-xl-4 col-lg-4 col-md-4  text-center">
+                                            <div class="price-top-part">
+                                                <i class="iconsmind-Ticket large-icon"></i>
+                                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Lead Tickets</h5>
+                                                <p class="text-large mb-2 text-white"><span class="notranslate lead-tickets">0.0 </span>
+                                                </p>
+                                                <p class="text-muted text-small">Count</p>
+                                            </div>
+                                        </div>
+                                        <div class="container col-6 col-xl-4 col-lg-4 col-md-4  text-center">
+                                            <div class="price-top-part">
+                                                <i class="iconsmind-MaleFemale large-icon"></i>
+                                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Players</h5>
+                                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                                            id="current-players">0.0</span>
+                                                </p>
+                                                <p class="text-muted text-small">Count</p>
+                                            </div>
+                                        </div>
+                                        <div class="container col-6 col-xl-4 col-lg-4 col-md-4  text-center">
+                                            <div class="price-top-part">
+                                                <i class="iconsmind-Movie-Ticket large-icon"></i>
+                                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Tickets</h5>
+                                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                                            id="current-tickets">0.0 </span>
+                                                </p>
+                                                <p class="text-muted text-small">Count</p>
+                                            </div>
+                                        </div>
+                                        <div class="container col-6 col-xl-4 col-lg-4 col-md-4  text-center">
+                                            <div class="price-top-part">
+                                                <i class="iconsmind-Basket-Coins large-icon"></i>
+                                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-2">Jackpot</h5>
+                                                <p class="text-large mb-2 text-white"><span class="notranslate jackpotBalance">0.0</span>
+                                                </p>
+                                                <p class="text-muted text-small">TRX</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="text-center">
+                                        <h3>Round  <span class="notranslate" id="time-left"></span></h3>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container col-12 col-xl-6 col-lg-6 col-md-6">
+                            <h2 class="text-white-50">About</h2>
+                            <p class="text-white">Bankroll Daily is a high dividend credit pool driven by 4 hour rounds.
+                                In each round 2 winners are selected, a whale that purchases the most tickets and a
+                                randomly selected player; the jackpot is split 60/40.</p>
+                                <p class="white">Distribution of tickets:<br>68% goes to a player dividend pool, 10% is paid instantly via
+                                the pool, 20% goes to a rolling jackpot, and 2% covers referral /
+                                maintenance fees.</p>
+                            <p class="white">Referral<br><span id="quoteDisplay" class="notranslate">Loading...</span>
+                            </p>
+                            <p class="white">Contract<br><a class="notranslate"
+                                                            href="https://tronscan.org/#/contract/THEA3DKyvufxh63DYdZMrqvyyWQcFAj6AL">https://tronscan.org/#/contract/THEA3...Aj6AL</a>
+                            </p>
+                            <p class="text-small">* Daily minimum dividends calculated from distribution of current
+                                dividend pool balance and excludes instant payouts.</p>
+                        </div>
+                    </div>
+
+                    <div class="row pt-4 mt-4">
+                        <div class="container col-12 text-center">
+                            <h1 class="text-white-50">Stats</h1>
+                            <p>
+                                The Daily is a PvP dividend Battle Royale!!! Here are the numbers...
+                            </p>
+                        </div>
+                        <div class="container col-12 col-xl-4 col-lg-4 col-md-4 text-center">
+                            <div class="price-top-part">
+                                <i class="iconsmind-MaleFemale large-icon"></i>
+                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">Players</h5>
+                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                            id="getTotalMembers">0</span></p>
+                                <p class="text-muted text-small">User Count</p>
+                            </div>
+                        </div>
+                        <div class="container col-12 col-xl-4 col-lg-4 col-md-4 text-center">
+                            <div class="price-top-part">
+                                <i class="iconsmind-Coins large-icon"></i>
+                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">Dividend Pool</h5>
+                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                            id="dividendBalance">0.0</span></p>
+                                <p class="text-muted text-small">TRX</p>
+                            </div>
+                        </div>
+                        <div class="container col-12 col-xl-4 col-lg-4 col-md-4 text-center">
+                            <div class="price-top-part">
+                                <i class="iconsmind-Basket-Coins large-icon"></i>
+                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">Jackpot</h5>
+                                <p class="text-large mb-2 text-white"><span class="notranslate jackpotBalance">0.0</span></p>
+                                <p class="text-muted text-small">TRX</p>
+                            </div>
+                        </div>
+                        <div class="container col-12 col-xl-4 col-lg-4 col-md-4 text-center">
+                            <div class="price-top-part">
+                                <i class="iconsmind-Bank large-icon"></i>
+                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">Contract Balance</h5>
+                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                            id="contractBalance">0.0</span></p>
+                                <p class="text-muted text-small">TRX</p>
+                            </div>
+                        </div>
+
+                        <div class="container col-xl-4 col-lg-4 col-md-4 text-center">
+                            <div class="price-top-part">
+                                <i class="iconsmind-Movie-Ticket large-icon"></i>
+                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">Total Tickets</h5>
+                                <p class="text-large mb-2 text-white"><span class="notranslate"
+                                                                            id="totalTickets">0.0</span></p>
+                                <p class="text-muted text-small">Txs</p>
+                            </div>
+                        </div>
+
+
+                        <div class="container col-xl-4 col-lg-4 col-md-4 text-center">
+                            <div class="price-top-part">
+                                <i class="iconsmind-Sync large-icon"></i>
+                                <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">Transactions</h5>
+                                <p class="text-large mb-2 text-white"><span class="notranslate" id="totalTxs">0.0</span>
+                                </p>
+                                <p class="text-muted text-small">Txs</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-4 mt-4">
+                        <div class="col-12 mb-4">
+                            <div class="card ">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs card-header-tabs " role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="first-tab" data-toggle="tab"
+                                               href="#activityContent"
+                                               role="tab" aria-controls="activityContent"
+                                               aria-selected="true">Activity</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="second-tab" data-toggle="tab"
+                                               href="#roundsContent"
+                                               role="tab" aria-controls="roundsContent" aria-selected="false">Round</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="third-tab" data-toggle="tab"
+                                               href="#leaderboardContent" role="tab"
+                                               aria-controls="leaderboardContent" aria-selected="false">Leaderboard</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="fourth-tab" data-toggle="tab"
+                                               href="#historyContent" role="tab"
+                                               aria-controls="historyContent" aria-selected="false">History</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <div id="tabContainerDaily" class="tab-content">
+
+                                        <div class="tab-pane fade show active" id="activityContent" role="tabpanel"
+                                             aria-labelledby="first-tab">
+                                        </div>
+
+                                        <div class="tab-pane fade" id="roundsContent" role="tabpanel"
+                                             aria-labelledby="second-tab">
+                                        </div>
+
+                                        <div class="tab-pane fade" id="leaderboardContent" role="tabpanel"
+                                             aria-labelledby="third-tab">
+                                        </div>
+
+                                        <div class="tab-pane fade" id="historyContent" role="tabpanel"
+                                             aria-labelledby="fourth-tab">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="section mt-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12  text-center">
+                                <a id="faq"></a>
+                                <h1 class="text-white-50">Mini Guide</h1>
+                                <p>
+                                    The New Daily is a high dividend firehose with built in PvP whale war and raffle.
+                                    NONSTOP 4 hour rounds deliver pure dividend bliss
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <div class="owl-container">
+                                    <div class="owl-carousel home-carousel">
+
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <div>
+                                                    <i class="iconsmind-Battery-75 large-icon"></i>
+                                                    <h5 class="mb-0 font-weight-semibold">
+                                                        Dividend Power
+                                                    </h5>
+                                                </div>
+                                                <div>
+                                                    <p class="detail-text">
+                                                        Dividend Power builds as you purchase tickets in each round.
+                                                        When you claim dividends to Credits 5% of your power is burned.
+                                                    </p>
+                                                </div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <div>
+                                                    <i class="iconsmind-Pie-Chart3 large-icon"></i>
+                                                    <h5 class="mb-0 font-weight-semibold">
+                                                        Distribution
+                                                    </h5>
+                                                </div>
+                                                <div>
+                                                    <p class="detail-text">
+                                                        The Daily pays out 2% of the dividend pool every day; at the end
+                                                        of each round. 70% of every transaction in the Daily goes to the
+                                                        dividend pool, with 10% paid out instantly.
+                                                        Dividends are paid out instantly. 20% goes to the Jackpot. 8%
+                                                        goes to Luck. 1% of deposits are paid to referrals.
+                                                        1% of deposits are paid to maintenance / promotion.
+                                                    </p>
+                                                </div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <div>
+                                                    <i class="iconsmind-Line-Chart2 large-icon"></i>
+                                                    <h5 class="mb-0 font-weight-semibold">
+                                                        Lifetime Dividends
+                                                    </h5>
+                                                </div>
+                                                <div>
+                                                    <p class="detail-text">
+                                                        Dividends are pegged 1:1 to TRON. Every unclaimed dividend is
+                                                        yours and it is OK to accumulate to conserve dividend power.
+                                                        Players enjoy the highest dividend payouts on the TRON
+                                                        blockchain, NON-STOP.
+                                                    </p>
+                                                </div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <div>
+                                                    <i class="iconsmind-Laptop-Phone large-icon"></i>
+                                                    <h5 class="mb-0 font-weight-semibold">
+                                                        Sleek and Responsive
+                                                    </h5>
+                                                </div>
+                                                <div>
+                                                    <p class="detail-text">
+                                                        The Daily is designed to work well on both desktop and mobile. A
+                                                        sleek dark theme keeps you in the zone, WINNING
+                                                    </p>
+                                                </div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <div>
+                                                    <i class="iconsmind-Gentleman large-icon"></i>
+                                                    <h5 class="mb-0 font-weight-semibold">
+                                                        A Bankteller Production
+                                                    </h5>
+                                                </div>
+                                                <div>
+                                                    <p class="detail-text">
+                                                        Play to win and sleep well at night.
+                                                        As always, built with love.
+                                                    </p>
+                                                </div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-nav text-center mb-5">
+                                        <a class="left-arrow owl-prev">
+                                            <i class="simple-icon-arrow-left"></i>
+                                        </a>
+                                        <div class="slider-dot-container"></div>
+                                        <a class="right-arrow owl-next">
+                                            <i class="simple-icon-arrow-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section footer mb-0">
+                    <div class="container">
+                        <div class="row footer-row">
+                            <div class="col-12 text-right">
+                                <a class="btn btn-circle btn-outline-semi-light footer-circle-button scrollTo"
+                                   href="#home"
+                                   id="footerCircleButton"><i
+                                        class="simple-icon-arrow-up"></i></a>
+                            </div>
+                            <div class="col-12 text-center footer-content">
+                                <a href="#home" class="scrollTo">
+                                    <img class="footer-logo" alt="footer logo" src="img/logo/LogoWhite.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" id="footerMenuAccordion">
+
+                        </div>
+                    </div>
+                    <div class="separator mt-5"></div>
+                    <div class="container copyright pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-12 mb-4">This application has been made for entertainment purposes and
+                                should be considered as such. No guarantees or warranties are given.<br>Bankroll is an
+                                entertainment platform, not an investment platform.
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0">2019 © Bankroll</p>
+                            </div>
+                            <div class="col-6 text-right social-icons">
+                                <p><a href="https://t.me/bankrollnetwork" class="footer-link"><img
+                                        class="footer-telegram" src="./img/telegram-logo.svg"/> Join us on Telegram</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/daily.bundle.js?t=1572287774395"></script>
+<script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
